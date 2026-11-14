@@ -26,7 +26,7 @@ This is a static site; editable activity data saved by visitors in their browser
 
 - Family 1: December 22–28; arrival PHX 3:03 PM Dec 22, departure PHX 6:05 PM Dec 28; using Uber.
 - Family 2: December 22–28, midnight arrival around the transition from December 22 to 23.
-- Family 3: December 25–31.
+- Family 3: December 25–30.
 - Main group activities: December 25–27.
 - Hotel: JW Marriott Phoenix Desert Ridge.
 - Christmas evening, Dec 25: Fairmont Scottsdale Princess.
