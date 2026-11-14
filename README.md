@@ -33,3 +33,5 @@ This is a static site; editable activity data saved by visitors in their browser
 - Groupon links search for offers; they do not guarantee discounts.
 
 The current source reflects the latest Groupon-enabled itinerary from this conversation.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c2b095c9-9521-4fb4-91c7-4dada9909406/deploy-status)](https://app.netlify.com/projects/scotsdale-marriot-2026/deploys)
