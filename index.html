@@ -22,7 +22,7 @@ dialog{border:0;border-radius:20px;padding:0;max-width:520px;width:calc(100% - 3
 @media(max-width:740px){.families-grid{grid-template-columns:1fr}.arrival-callout{align-items:flex-start;flex-direction:column}.arrival-callout .btn{width:100%}}
 @media print{.family-card .btn{display:none}}
 @media(max-width:740px){.mobile-nav{justify-content:flex-start;overflow-x:auto;overscroll-behavior-x:contain;max-width:100%;scrollbar-width:none}.mobile-nav::-webkit-scrollbar{display:none}.mobile-nav button{flex:0 0 auto}.daytabs{max-width:100%;}}
-.groupon-link{background:#e5f4ea;color:#176c42;border:1px solid #bcdac7;display:inline-flex;align-items:center;justify-content:center;max-width:100%;width:max-content}.groupon-link:hover{background:#d2eadb}.groupon-notice{background:#edf5eb;border:1px solid #cbdcc9;border-radius:12px;padding:13px 16px;font-size:13px;line-height:1.6;color:#365a42;margin:8px 0 18px}.event-footer>div:first-child{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.idea>.groupon-link{margin-top:5px}</style>
+.groupon-link{background:#e5f4ea;color:#176c42;border:1px solid #bcdac7;display:inline-flex;align-items:center;justify-content:center;max-width:100%;width:max-content}.groupon-link:hover{background:#d2eadb}.groupon-offer{display:inline-flex;flex-direction:column;align-items:flex-start;gap:5px;max-width:100%}.groupon-warning{display:block;color:#63746c;font-size:11px;line-height:1.4;max-width:440px}.groupon-notice{background:#edf5eb;border:1px solid #cbdcc9;border-radius:12px;padding:13px 16px;font-size:13px;line-height:1.6;color:#365a42;margin:8px 0 18px}.event-footer>div:first-child{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.idea>.groupon-link{margin-top:5px}</style>
 </head>
 <body>
 <div class="shell">
@@ -50,8 +50,8 @@ dialog{border:0;border-radius:20px;padding:0;max-width:520px;width:calc(100% - 3
  <div class="arrival-callout" style="margin:0 0 19px"><div><strong>🏨 One shared home base</strong><p>JW Marriott Phoenix Desert Ridge Resort & Spa is the chosen hotel for everyone. Room booking details for other families can be filled in later.</p></div><a class="btn small" href="https://www.marriott.com/en-us/hotels/phxdr-jw-marriott-phoenix-desert-ridge-resort-and-spa/overview/" target="_blank" rel="noopener">View resort ↗</a></div>
  <div class="families-grid" id="familiesGrid"></div>
  <div class="notice">📌 Group size is up to 6 adults and 5 children. Actual attendance varies by day. Family 2: Dec 22–28, arriving at midnight (late Dec 22 / early Dec 23). Family 3: Dec 25–31. Add flight bookings and car plans when known.</div></section>
-<section id="itinerary" class="section-view"><div class="groupon-notice">🏷️ Each activity has a <strong>Search Groupon</strong> link when relevant. Searches open Groupon in a new tab; availability, eligibility and holiday-date validity must be checked before purchasing.</div><div class="sect-head"><div><h2>The daily itinerary</h2><p>Flexible by design. Edit any activity, or add your own.</p></div><button class="btn primary small" id="addEventBtn">+ Add activity</button></div><div class="daytabs" id="dayTabs"></div><div class="day-title" id="dayTitle"></div><div class="attend-note" id="attendance"></div><div class="filterbar" id="filterBar"></div><div class="timeline" id="timeline"></div><div class="notice">🔁 Everyone can enjoy this itinerary as a shared reference. Edits are saved on your device; use “Share trip” to send an updated snapshot of your plan.</div></section>
-<section id="ideas" class="section-view"><div class="groupon-notice">🏷️ Browse Groupon searches for each suggestion, including ideas for the family staying after December 28. A search link does not guarantee a deal for your date.</div><div class="sect-head"><div><h2>Activity inspiration</h2><p>Optional swaps during Dec 22–28, plus separate suggestions for friends staying longer.</p></div></div><div class="ideas" id="ideasGrid"></div><div class="sect-head"><div><h2>For Family 3 · Dec 29–31 suggestions</h2><p>Suggestions only — no extra days added to the main itinerary. Family 3 can choose these independently on Dec 29–31; the main itinerary still ends Dec 28.</p></div></div><div class="ideas" id="extendedGrid"></div><div class="notice">🌤️ December afternoons are usually pleasant, but pool and slide operations are weather-dependent. For resort activities, check the daily activity calendar when you arrive.</div></section>
+<section id="itinerary" class="section-view"><div class="groupon-notice">🏷️ Exact Groupon offers are linked directly when verified. Other attractions show clearly labelled searches only. Review event date, group size, age limits and voucher terms before paying.</div><div class="sect-head"><div><h2>The daily itinerary</h2><p>Flexible by design. Edit any activity, or add your own.</p></div><button class="btn primary small" id="addEventBtn">+ Add activity</button></div><div class="daytabs" id="dayTabs"></div><div class="day-title" id="dayTitle"></div><div class="attend-note" id="attendance"></div><div class="filterbar" id="filterBar"></div><div class="timeline" id="timeline"></div><div class="notice">🔁 Everyone can enjoy this itinerary as a shared reference. Edits are saved on your device; use “Share trip” to send an updated snapshot of your plan.</div></section>
+<section id="ideas" class="section-view"><div class="groupon-notice">🏷️ Verified merchant listings open directly; unverified Groupon links are labelled as searches. Some free or resort-included activities only link to official information.</div><div class="sect-head"><div><h2>Activity inspiration</h2><p>Optional swaps during Dec 22–28, plus separate suggestions for friends staying longer.</p></div></div><div class="ideas" id="ideasGrid"></div><div class="sect-head"><div><h2>For Family 3 · Dec 29–31 suggestions</h2><p>Suggestions only — no extra days added to the main itinerary. Family 3 can choose these independently on Dec 29–31; the main itinerary still ends Dec 28.</p></div></div><div class="ideas" id="extendedGrid"></div><div class="notice">🌤️ December afternoons are usually pleasant, but pool and slide operations are weather-dependent. For resort activities, check the daily activity calendar when you arrive.</div></section>
 <section id="checklist" class="section-view"><div class="sect-head"><div><h2>The activity & travel checklist</h2><p>A small amount of planning, then all the fun.</p></div></div><div class="card info-card"><div class="check-count" id="checkCount"></div><div class="progress"><div id="progressFill"></div></div></div><div style="height:15px"></div><div class="checklist" id="checkGrid"></div></section>
 <section id="notes" class="section-view"><div class="sect-head"><div><h2>Trip notes & sharing</h2><p>Keep useful details in one place, without publishing private confirmation numbers.</p></div></div><div class="twocol"><div class="card notes"><h3 style="font:500 23px Fraunces,Georgia,serif;margin:0 0 10px">Group notes</h3><textarea id="groupNotes" placeholder="Meeting spot, packing reminders, dinner preferences, flight arrival times, who's bringing what..."></textarea><p class="hint">Saved automatically on this device. Notes are included when you share a snapshot; avoid passwords and booking confirmation codes.</p></div><div class="card info-card"><h3>Sharing this site</h3><p>After the website is published, tap <b>Share trip</b> to copy a link with your latest itinerary and notes.</p><div class="detail-row"><span>🔗</span><div><b>Share current plan</b><span>Friends can view the same itinerary from a link.</span></div></div><div class="detail-row"><span>✏️</span><div><b>Edits don't sync automatically</b><span>Anyone can edit their own copy. Share a new link when the group agrees on changes.</span></div></div><div class="detail-row"><span>📦</span><div><b>Save a backup</b><span>Export a JSON file and import it later.</span></div></div><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px"><button class="btn primary" id="shareAgain">↗ Share trip</button><button class="btn" id="importBtn">↑ Import backup</button><input id="fileInput" type="file" accept=".json,application/json" hidden></div></div></div><div class="notice">🌐 Not hosted yet? Open README.md in the downloaded ZIP for two simple publishing methods, or send this HTML file directly to your friends.</div></section>
 <footer class="footer"><span>Scottsdale Together · Made for your December 2026 family trip</span><span>Holiday activities and hours subject to change · Local time in Arizona (MST)</span></footer>
@@ -106,7 +106,7 @@ E('g2','2026-12-28','14:45','Leave JW Marriott for PHX airport','Suggested depar
 E('g4','2026-12-28','18:05','Your family departs Phoenix (PHX)','Flight booked. Scheduled departure Monday, Dec 28 at 6:05 PM Phoenix local time.','travel','booked','','🛫'),
 E('g3','2026-12-28','13:30','Optional resort afternoon for friends remaining','Those staying longer can enjoy the pool, shops, or a spontaneous outing without the departing family.','relax','optional',LINKS.water,'🌴')
 ];
-const IDEA_DATA=[{title:'Horseback riding',emoji:'🐎',category:'adventure',desc:'Swap the desert hike for a guided ride if all kids meet the outfitter’s requirements.',link:'https://www.experiencescottsdale.com/activities/outdoor-adventure/horseback-riding/'},{title:'Butterfly Wonderland',emoji:'🦋',category:'adventure',desc:'An indoor rainforest and butterfly conservatory next to OdySea Aquarium.',link:'https://butterflywonderland.com/'},{title:'Railroad Park lights',emoji:'🚂',category:'holiday',desc:'A fun evening alternative to the botanical garden on Dec 27. Closed for lights Dec 24–25.',link:LINKS.railroad},{title:'Pickleball afternoon',emoji:'🏓',category:'resort',desc:'A playful group activity without leaving JW Marriott Desert Ridge.',link:LINKS.hotel},{title:'Cabana afternoon',emoji:'🏖️',category:'relax',desc:'Reserve a poolside home base for the group and give adults a relaxed afternoon.',link:LINKS.water},{title:'Gingerbread & snow play',emoji:'🍪',category:'holiday',desc:'Add another Jingle at JW experience, subject to the activity schedule and tickets.',link:LINKS.christmas},{title:'Tía Carmen dinner',emoji:'🌶️',category:'food',desc:'One of the resort’s signature dining experiences. Coordinate one group table.',link:LINKS.dining},{title:'Extra desert stroll',emoji:'🌅',category:'adventure',desc:'A low-effort desert sunset outing in place of shopping or another attraction.',link:LINKS.gateway},{title:'Kids’ arcade + games',emoji:'🕹️',category:'resort',desc:'A resort activity for the children while adults enjoy a little downtime.',link:LINKS.hotel}];
+const IDEA_DATA=[{title:'Horseback riding',emoji:'🐎',category:'adventure',desc:'Swap the desert hike for a guided ride if all kids meet the outfitter’s requirements.',link:'https://www.experiencescottsdale.com/activities/outdoor-adventure/horseback-riding/'},{title:'Butterfly Wonderland',emoji:'🦋',category:'adventure',desc:'An indoor rainforest and butterfly conservatory next to OdySea Aquarium.',link:'https://butterflywonderland.com/'},{title:'Railroad Park lights',emoji:'🚂',category:'holiday',desc:'A fun evening alternative to the botanical garden on Dec 27. Closed for lights Dec 24–25.',link:LINKS.railroad},{title:'Pickleball afternoon',emoji:'🏓',category:'resort',desc:'A playful group activity without leaving JW Marriott Desert Ridge.',link:LINKS.hotel},{title:'Cabana afternoon',emoji:'🏖️',category:'relax',desc:'Reserve a poolside home base for the group and give adults a relaxed afternoon.',link:LINKS.water},{title:'Gingerbread & snow play',emoji:'🍪',category:'holiday',desc:'Add another Jingle at JW experience, subject to the activity schedule and tickets.',link:LINKS.christmas},{title:'Tía Carmen dinner',emoji:'🌶️',category:'food',desc:'One of the resort’s signature dining experiences. Coordinate one group table.',link:LINKS.dining},{title:'Extra desert stroll',emoji:'🌅',category:'adventure',desc:'A low-effort desert sunset outing in place of shopping or another attraction.',link:LINKS.gateway},{title:'Kids’ arcade + games',emoji:'🕹️',category:'resort',desc:'A resort activity for the children while adults enjoy a little downtime.',link:LINKS.hotel},{title:'Puttshack Scottsdale mini golf',emoji:'⛳',category:'adventure',desc:'Optional outing at Scottsdale Quarter; Groupon has a merchant-specific listing with weekday and any-day choices.',link:'https://www.puttshack.com/locations/scottsdale'}];
 const EXTENDED_IDEAS=[
 {title:'OdySea Aquarium + Butterfly Wonderland',emoji:'🐠',category:'indoor',desc:'A flexible half or full day of marine exhibits and a butterfly conservatory at Arizona Boardwalk.',link:LINKS.aquarium},
 {title:'Desert Botanical Garden',emoji:'🌵',category:'outdoors',desc:'Explore spectacular Sonoran plants, garden walks and any seasonal evening programming still running.',link:'https://dbg.org/'},
@@ -178,40 +178,54 @@ try{if(location.hash.startsWith('#plan=')){const s=parseShared(location.hash.sli
 })();
 function persist(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){console.warn('Storage unavailable',e)}}
 function esc(x){return String(x??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-// Groupon search links deliberately search by activity instead of asserting an offer exists.
-// Groupon inventories and terms change; check exact attraction, date and age eligibility.
-function grouponQuery(item){
+// Curated Groupon destinations, checked on November 14, 2026.
+// Verified listing = exact merchant/attraction page, NOT confirmed date inventory.
+// Other links are explicitly labelled browsing links, never promised discounts.
+function grouponOffer(item){
   const title=(item.title||'').toLowerCase();
   const desc=(item.desc||'').toLowerCase();
-  if(/christmas at the princess|fairmont scottsdale/i.test(title+' '+desc))return 'Christmas at the Princess Fairmont Scottsdale';
-  if(/ice!|jingle at jw|snow play|gingerbread/i.test(title+' '+desc))return 'Jingle at JW ICE Desert Ridge';
-  if(/butterfly/i.test(title))return 'Butterfly Wonderland Scottsdale';
-  if(/odysea|aquarium/i.test(title))return 'OdySea Aquarium Scottsdale';
-  if(/horseback|desert adventure|desert ride/i.test(title))return 'horseback riding Scottsdale';
-  if(/railroad|train rides/i.test(title))return 'McCormick Stillman Railroad Park Scottsdale';
-  if(/botanical|garden/i.test(title))return 'Desert Botanical Garden Phoenix';
-  if(/old town|scottsdale explor/i.test(title))return 'Old Town Scottsdale tours activities';
-  if(/pickleball/i.test(title))return 'pickleball Scottsdale';
-  if(/cabana|pool|waterpark|lazy river|slides|aquaridge/i.test(title))return 'waterpark pool Scottsdale Phoenix';
-  if(/spa|massage/i.test(title))return 'spa massage Phoenix Desert Ridge';
-  if(/arcade|games/i.test(title))return 'arcade family fun Phoenix Scottsdale';
-  if(/dinner|lunch|breakfast|food|meal|dining|carmen/i.test(title))return 'restaurants Desert Ridge Phoenix Scottsdale';
-  if(/hike|trail|nature walk|desert stroll|desert sunset/i.test(title))return 'Scottsdale guided desert hiking tour';
-  if(/s.mores|fire pit|fireside/i.test(title))return 'Christmas holiday activities Scottsdale';
-  if(item.category==='holiday')return 'Christmas holiday events Scottsdale';
-  if(item.category==='adventure')return 'outdoor adventures Scottsdale Arizona';
-  if(item.category==='resort')return 'family activities Phoenix Desert Ridge';
-  if(item.category==='food')return 'restaurants Desert Ridge Phoenix Scottsdale';
-  if(item.category==='relax')return 'spa Scottsdale Phoenix';
-  return '';
-}
-function grouponLink(item){
-  const term=grouponQuery(item);
-  return term?'https://www.groupon.com/search?query='+encodeURIComponent(term)+'&location='+encodeURIComponent('Scottsdale, AZ'):'';
+  const combined=title+' '+desc;
+  const direct=(url,warning)=>({url,label:'Review Groupon offer ↗',warning,verified:true});
+  const search=(term,city,warning)=>({
+    url:'https://www.groupon.com/search?query='+encodeURIComponent(term)+'&location='+encodeURIComponent(city),
+    label:'Search Groupon (unverified) ↗',warning,verified:false
+  });
+  if(/christmas at the princess|fairmont scottsdale/.test(combined))
+    return direct('https://www.groupon.com/deals/christmas-at-the-princess-scottsdale-standard-package-2026',
+      'Select Dec 25, 2026 at checkout; tickets are date-specific, non-refundable and require online voucher redemption. Parking is not included or needed with Uber.');
+  if(/ice!|ice featuring elf|ice featuring/.test(title))
+    return direct('https://www.groupon.com/deals/gl-jw-marriott-desert-ridge-ice',
+      'Choose Dec 26, 2026 and an available entry slot before paying. Check blackout dates; a Groupon listing does not confirm Dec 26 availability.');
+  if(/puttshack/.test(title))
+    return direct('https://www.groupon.com/deals/puttshack-scottsdale',
+      'Scottsdale Quarter location. Choose an any-day option for weekend visits; children 12 and under may need junior admission.');
+  if(/horseback|desert adventure|desert ride/.test(title))
+    return {url:'https://www.groupon.com/local/scottsdale/horse-riding',
+      label:'Browse riding deals (check restrictions) ↗',verified:false,
+      warning:'For Dec 27 (Sunday), confirm Sunday operation and minimum age 7 before purchasing. Some listings are weekdays-only or expire before your trip.'};
+  if(/butterfly/.test(title))
+    return search('Butterfly Wonderland','Scottsdale, AZ',
+      'No verified exact-attraction admission deal; check merchant identity and validity dates.');
+  if(/odysea|aquarium/.test(title))
+    return search('OdySea Aquarium','Scottsdale, AZ',
+      'Do not confuse OdySea Aquarium in Scottsdale with SEA LIFE Aquarium in Tempe. Exact deal not verified.');
+  if(/botanical garden|luminaria/.test(title))
+    return search('Desert Botanical Garden','Phoenix, AZ',
+      'A listing for a tour or nearby attraction is not admission to Desert Botanical Garden. Exact deal unverified.');
+  if(/railroad|train ride/.test(title))
+    return search('McCormick Stillman Railroad Park','Scottsdale, AZ',
+      'Exact park admission discount not verified; confirm holiday event operating days.');
+  if(/snow play|gingerbread|jingle at jw/.test(title))
+    return search('Jingle at JW Phoenix Desert Ridge','Phoenix, AZ',
+      'These are not ICE! tickets unless the listing explicitly says ICE! and includes your chosen activity.');
+  // Ordinary walks, on-site pools, cabanas, hotel meals, and general relaxation
+  // should use the existing official link, not unrelated Groupon listings.
+  return null;
 }
 function grouponChip(item){
-  const href=grouponLink(item);
-  return href?`<a class="linkchip groupon-link" target="_blank" rel="noopener noreferrer" href="${esc(href)}" aria-label="Search Groupon deals for ${esc(item.title)}">🏷️ Search Groupon ↗</a>`:'';
+  const offer=grouponOffer(item);
+  if(!offer)return '';
+  return `<span class="groupon-offer"><a class="linkchip groupon-link" target="_blank" rel="noopener noreferrer" href="${esc(offer.url)}" aria-label="${esc(offer.label)} for ${esc(item.title)}">🏷️ ${esc(offer.label)}</a><small class="groupon-warning">${esc(offer.warning)}</small></span>`;
 }
 const safeUrl=x=>{try{const u=new URL(x);return ['https:','http:'].includes(u.protocol)?u.href:''}catch(e){return ''}};
 const icons={overview:'⌂',families:'👥',itinerary:'▤',ideas:'✦',checklist:'☑',notes:'▧'};
